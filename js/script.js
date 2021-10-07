@@ -6,9 +6,8 @@ var error = false;
 var ans = false;
 
 function agregarCifra(id){
-    if(ans == true){
-
-    }else{let tecla = document.getElementById(id).textContent;
+    if(ans == false){
+        let tecla = document.getElementById(id).textContent;
         if (nuevo == true){
             display.innerHTML = tecla;
             nuevo = false;
@@ -42,10 +41,11 @@ function agregarOperador(id){
 }
 
 function removerUltimo(){
-    if(ans = true){
+    if(ans == true){
         display.innerHTML = 0;
         nuevo = true;
         ans = false;
+        elementos = [];
     }else if(elementos.length != 0 && nuevo == true){
         elementos.pop();
         display.innerHTML = elementos[elementos.length -1];
