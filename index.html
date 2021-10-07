@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="display" id="display">
+            <h2 id="displayTexto">0</h2>
+        </div>
+
+        <div class="boton" id="C" onclick="reiniciar()">
+            <h2 id="CTexto">C</h2>
+        </div>
+        <div class="boton" id="CE" onclick="removerUltimo()">
+            <h2 id="CETexto">CE</h2>
+        </div>
+        <div class="boton" id="Divi" onclick="agregarOperador('DiviTexto')">
+            <h2 id="DiviTexto">/</h2>
+        </div>
+        <div class="boton" id="Siete" onclick="agregarCifra('SieteTexto')">
+            <h2 id="SieteTexto">7</h2>
+        </div>
+        <div class="boton" id="Ocho" onclick="agregarCifra('OchoTexto')">
+            <h2 id="OchoTexto">8</h2>
+        </div>
+        <div class="boton" id="Nueve" onclick="agregarCifra('NueveTexto')">
+            <h2 id="NueveTexto">9</h2>
+        </div>
+        <div class="boton" id="Mult" onclick="agregarOperador('MultTexto')">
+            <h2 id="MultTexto">x</h2>
+        </div>
+        <div class="boton" id="Cuatro" onclick="agregarCifra('CuatroTexto')">
+            <h2 id="CuatroTexto">4</h2>
+        </div>
+        <div class="boton" id="Cinco" onclick="agregarCifra('CincoTexto')">
+            <h2 id="CincoTexto">5</h2>
+        </div>
+        <div class="boton" id="Seis" onclick="agregarCifra('SeisTexto')">
+            <h2 id="SeisTexto">6</h2>
+        </div>
+        <div class="boton" id="Rest" onclick="agregarOperador('RestTexto')">
+            <h2 id="RestTexto">-</h2>
+        </div>
+        <div class="boton" id="Uno" onclick="agregarCifra('UnoTexto')">
+            <h2 id="UnoTexto">1</h2>
+        </div>
+        <div class="boton" id="Dos" onclick="agregarCifra('DosTexto')">
+            <h2 id="DosTexto">2</h2>
+        </div>
+        <div class="boton" id="Tres" onclick="agregarCifra('TresTexto')">
+            <h2 id="TresTexto">3</h2>
+        </div>
+        <div class="boton" id="Sum" onclick="agregarOperador('SumTexto')">
+            <h2 id="SumTexto">+</h2>
+        </div>
+        <div class="boton" id="Cero" onclick="agregarCifra('CeroTexto')">
+            <h2 id="CeroTexto">0</h2>
+        </div>
+        <div class="boton" id="Punto" onclick="agregarCifra('PuntoTexto')">
+            <h2 id="PuntoTexto">.</h2>
+        </div>
+        <div class="boton" id="Igual" onclick="operar()">
+            <h2>=</h2>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

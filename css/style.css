@@ -1,0 +1,127 @@
+html{
+    font-size: 2.5vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    'display display display display'
+    'display display display display'
+    'C C CE Divi'
+    'Siete Ocho Nueve Mult'
+    'Cuatro Cinco Seis Rest'
+    'Uno Dos Tres Sum'
+    'Cero Cero Punto Igual';
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    background-color: #159BBE;
+    width: 90vw;
+    height: 90vh;
+    padding: 10px;
+}
+
+.display{
+    background-color: #54CDEC;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.7rem;
+}
+
+.boton{
+    background-color: #54CDEC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+#display{
+    grid-area: display;
+}
+
+#C{
+    grid-area: C;
+}
+
+#CE{
+    grid-area: CE;
+}
+
+#Divi{
+    grid-area: Divi;
+}
+
+#Siete{
+    grid-area: Siete;
+}
+
+#Ocho{
+    grid-area: Ocho;
+}
+
+#Nueve{
+    grid-area: Nueve;
+}
+
+#Mult{
+    grid-area: Mult;
+}
+
+#Cuatro{
+    grid-area: Cuatro;
+}
+
+#Cinco{
+    grid-area: Cinco;
+}
+
+#Seis{
+    grid-area: Seis;
+}
+
+#Rest{
+    grid-area: Rest;
+}
+
+#Uno{
+    grid-area: Uno;
+}
+
+#Dos{
+    grid-area: Dos;
+}
+
+#Tres{
+    grid-area: Tres;
+}
+
+#Sum{
+    grid-area: Sum;
+}
+
+#Cero{
+    grid-area: Cero;
+}
+
+#Punto{
+    grid-area: Punto;
+}
+
+#Igual{
+    grid-area: Igual;
+}
